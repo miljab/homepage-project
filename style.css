@@ -8,6 +8,7 @@
 
 body {
   background-color: white;
+  line-height: 1.5;
 }
 
 .header-img {
@@ -35,11 +36,11 @@ header {
 .img-container {
   position: relative;
   height: 100%;
+  z-index: 2;
 }
 
 .img-container h1 {
   position: absolute;
-  z-index: 2;
   bottom: 10px;
   left: 50%;
   transform: translate(-50%);
@@ -65,6 +66,15 @@ header {
   height: 90%;
   justify-content: space-evenly;
   background-color: white;
+}
+
+.text-container h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.text-container p {
+  font-size: 18px;
 }
 
 .visual-div {
@@ -195,4 +205,59 @@ footer .socials {
 
 footer .socials img {
   width: 32px;
+}
+
+@media (max-width: 1000px) {
+  .img-container h1 {
+    position: absolute;
+    top: 10px;
+    transform: translate(0);
+    left: 80%;
+    font-size: 40px;
+  }
+
+  .img-container {
+    float: left;
+    margin-bottom: -100px;
+    margin-right: -40px;
+  }
+
+  .header-img {
+    float: left;
+    clear: both;
+    max-width: 300px;
+  }
+
+  .text-container {
+    padding: 50px 30px;
+    display: block;
+    box-shadow: -1px 3px 16px 0px rgba(152, 152, 152, 1);
+    margin: auto;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+  }
+
+  .text-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .about {
+    display: block;
+  }
+
+  main {
+    margin-top: 300px;
+  }
+
+  header {
+    margin: 30px 100px 30px 50px;
+  }
+
+  .text-container .socials {
+    display: none;
+  }
 }
